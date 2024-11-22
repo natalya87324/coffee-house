@@ -1,0 +1,14 @@
+{
+  "name": "coffee-house",
+  "version": "1.0.0",
+  "description": "Landing page for coffee-house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Natalya Kim",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}
