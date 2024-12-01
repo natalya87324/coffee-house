@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav__item {
+    display: inline-block;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    color: $color-text-dark;
+    font-size: $font-size-normal;
+    font-weight: $font-weight-bold;
+    line-height: 24px;
+  }
+
+  .menu {
+    @extend .nav__link;
+    display: flex;
+    gap: 8px;
+
+    &::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url(../../img/icons/coffee-cup.svg);
+    }
+  }
+}

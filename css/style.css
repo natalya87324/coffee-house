@@ -8,7 +8,48 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  background-color: #e1d4c9;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header .nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header .nav__item {
+  display: inline-block;
+}
+.header .nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+.header .nav__link, .header .menu {
+  text-decoration: none;
+  color: #403f3d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.header .menu {
+  display: flex;
+  gap: 8px;
+}
+.header .menu::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/icons/coffee-cup.svg);
 }
 
 /*# sourceMappingURL=style.css.map */
