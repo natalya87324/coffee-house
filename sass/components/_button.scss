@@ -1,0 +1,19 @@
+.button {
+  text-decoration: none;
+  padding: 20px 0;
+  color: inherit;
+  line-height: 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__btn {
+  @extend .button;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-text-dark;
+  background-color: $color-primary;
+}
