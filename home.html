@@ -17,7 +17,7 @@
   <div class="wrapper">
     <header class="header">
       <a href="#" class="logo">
-        <img src="img/icons/logo.png" alt="Coffee house logo">
+        <img src="img/icons/logo.svg" alt="Coffee house logo">
       </a>
       <nav class="nav">
         <ul class="nav__list">
@@ -38,17 +38,42 @@
       <a href="menu-coffee.html" class="menu">Menu</a>
 
     </header>
-    <main>
+    <main class="home-main">
       <section class="hero-section">
         <div class="hero-section__text-box">
           <h1 class="hero-section__title"><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
           <p class="hero-section__text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
           <a href="#" class="button hero-section__btn">Menu</a>
+        </div>     
+      </section>
+      <section class="slider-section">
+        <h2 class="slider-section__title">Choose your <span class="accent">favorite</span> coffee</h2>
+        <div class="slider-container">
+          <div class="slide slide--mobile slide--active">
+            <img class="slide__picture" src="./img/slider/coffee-slider-1.png" alt="A tall glass of Frappuccino">
+            <h3 class="slide__caption">S’mores Frappuccino</h3>
+            <p class="slide__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+            <p class="slide__price">$5.50</p>
+          </div>
+          <div class="slide slide--mobile">
+            <img class="slide__picture" src="./img/slider/coffee-slider-2.png" alt="A glass of layered Caramel Macchiato">
+            <h3 class="slide__caption">Caramel Macchiato</h3>
+            <p class="slide__text">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+            <p class="slide__price">$5.00</p>
+          </div>
+          <div class="slide slide--mobile">
+            <img class="slide__picture" src="./img/slider/coffee-slider-3.png" alt="A tall glass of Ice coffee">
+            <h3 class="slide__caption">Ice coffee</h3>
+            <p class="slide__text">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+            <p class="slide__price">$4.50</p>
+          </div>
+          <button class="arrow arrow-back" id="left" type="button"><span class="visually-hidden">Back</span></button>
+          <button class="arrow arrow-forward" id="right" type="button"><span class="visually-hidden">Forward</span></button>
         </div>
       </section>
     </main>
    
   </div>
-  
+<script src="js/slider.js"></script>  
 </body>
 </html>

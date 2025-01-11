@@ -4,15 +4,15 @@
   background-repeat: no-repeat;
   padding: 100px;
   border-radius: 40px;
-}
 
-.hero-section__text-box {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  &__text-box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 
-  .hero-section__title {
+  &__title {
     color: $color-primary;
     font-size: 72px;
     font-weight: 600;
@@ -20,14 +20,8 @@
     word-wrap: break-word;
   }
 
-  .accent {
-    @extend .hero-section__title;
-    font-style: italic;
-    color: $color-text-accent;
-  }
-
-  .hero-section__text {
-    @extend .hero-section__title;
+  &__text {
+    color: $color-primary;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

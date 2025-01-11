@@ -9,12 +9,31 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #e1d4c9;
+  padding: 0 40px;
+}
+
+.accent {
+  font-style: italic;
+  color: #b0907a;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1360px;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button, .hero-section__btn {
@@ -36,11 +55,93 @@ body {
   background-color: #e1d4c9;
 }
 
+.slider-section {
+  text-align: center;
+}
+.slider-section__title {
+  color: #403f3d;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  word-wrap: break-word;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  width: 100%;
+  height: 640px;
+  position: relative;
+}
+.slider-container .arrow {
+  position: absolute;
+  color: #665f55;
+  padding: 18px;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #665f55;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-container .arrow-back {
+  background-image: url(../../img/icons/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  left: 0;
+}
+.slider-container .arrow-forward {
+  background-image: url(../../img/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  right: 0;
+}
+.slider-container .slide {
+  color: #403f3d;
+  position: absolute;
+  display: none;
+  width: 480px;
+  height: 640px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider-container .slide--active {
+  display: block;
+}
+.slider-container .slide__picture {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.slider-container .slide__caption {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+.slider-container .slide__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.slider-container .slide__price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+}
+.header .logo {
+  width: 100px;
 }
 .header .nav__list {
   margin: 0;
@@ -71,6 +172,12 @@ body {
   background-image: url(../../img/icons/coffee-cup.svg);
 }
 
+.home-main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .hero-section {
   background-image: url(../../img/img-hero.jpg);
   background-position: center;
@@ -78,25 +185,21 @@ body {
   padding: 100px;
   border-radius: 40px;
 }
-
 .hero-section__text-box {
   width: 45%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.hero-section__text-box .hero-section__title, .hero-section__text-box .hero-section__text, .hero-section__text-box .accent {
+.hero-section__title {
   color: #e1d4c9;
   font-size: 72px;
   font-weight: 600;
   line-height: 75.6px;
   word-wrap: break-word;
 }
-.hero-section__text-box .accent {
-  font-style: italic;
-  color: #b0907a;
-}
-.hero-section__text-box .hero-section__text {
+.hero-section__text {
+  color: #e1d4c9;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
