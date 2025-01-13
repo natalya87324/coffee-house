@@ -27,3 +27,13 @@
     line-height: 24px;
   }
 }
+
+.advantages {
+  &__headline {
+    color: $color-text-dark;
+    font-size: $heading-secondary;
+    font-weight: $font-weight-bold;
+    line-height: 75px;
+    text-wrap: break-word;
+  }
+}

@@ -1,5 +1,7 @@
 .slider-section {
   text-align: center;
+  position: relative;
+  padding-bottom: 44px;
 
   &__title {
     color: $color-text-dark;
@@ -8,6 +10,28 @@
     line-height: 75px;
     word-wrap: break-word;
     margin-bottom: 40px;
+  }
+
+  .slider-control {
+    width: 144px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__item {
+      width: 40px;
+      height: 4px;
+      background-color: $color-border-light;
+      border-radius: 100px;
+    }
+
+    &__item--active {
+      background-color: $color-secondary;
+    }
   }
 }
 
@@ -27,6 +51,10 @@
     border: 1px solid $color-secondary;
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-primary, 5%);
+    }
   }
 
   .arrow-back {
