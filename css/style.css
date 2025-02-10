@@ -202,7 +202,7 @@ body {
 }
 
 .hero-section {
-  background-image: url(../../img/img-hero.jpg);
+  background-image: url(../img/img-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px;
