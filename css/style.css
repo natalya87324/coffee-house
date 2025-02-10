@@ -228,12 +228,31 @@ body {
   line-height: 24px;
 }
 
-.advantages__headline {
+.about__headline {
   color: #403f3d;
   font-size: 60px;
   font-weight: 600;
   line-height: 75px;
-  text-wrap: break-word;
+  letter-spacing: -0.5px;
+  margin-bottom: 40px;
+}
+.about__images {
+  display: grid;
+  height: 1060px;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.about__images .pic-1 {
+  grid-column: 1/2;
+}
+.about__images .pic-3 {
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
+.about__images .pic-4 {
+  grid-row: 2/4;
+  grid-column: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */
