@@ -108,14 +108,14 @@ body {
   background-color: rgb(215.8928571429, 198.9464285714, 184.6071428571);
 }
 .slider-container .arrow-back {
-  background-image: url("/../img/icons/arrow-left.svg");
+  background-image: url("../img/icons/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   left: 0;
 }
 .slider-container .arrow-forward {
-  background-image: url("/../img/icons/arrow-right.svg");
+  background-image: url("../img/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -192,7 +192,7 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("/../img/icons/coffee-cup.svg");
+  background-image: url("../img/icons/coffee-cup.svg");
 }
 
 .home-main {
@@ -202,7 +202,7 @@ body {
 }
 
 .hero-section {
-  background-image: url("/../img/img-hero.jpg");
+  background-image: url("../img/img-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px;
